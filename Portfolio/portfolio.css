@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+main{
+    width: 100%;
+    height: 90vh;
+    background-color: #262525;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar{
+    margin: 20px;
+    display: flex;
+    gap: 60px;
+}
+header h2{
+    color: #5DB9EE;
+    font-size: 34px;
+}
+li{
+    list-style: none;
+}
+li a{
+    padding: 5px;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+}
+.navbar li a:hover{
+    color: rgb(46, 107, 160);
+    text-decoration: underline;
+}
+.icons i.fab {
+    color: white;
+    font-size: 1.7rem
+    
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.first{
+    padding-top: 150px;
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+    padding-left: 150px;
+    width: 75vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.content{
+    margin-left:25px;
+     gap: 9px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.content .intro{
+    font-size: 40px;
+   color: white;
+
+}
+.content .intro span{
+    color: #5DB9EE;
+    
+}
+.content h1{
+    font-size: 40px;
+    color: #5DB9EE;
+
+}
+.content .detail{
+    font-size: 20px;
+    color: #ffff;
+    line-height: 1.2rem;
+}
+.but-con button{
+    border: 2px solid #5DB9EE;
+    font-size: 15px;
+    padding: 10px;
+    margin: 7px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 1s ease;
+
+}
+button:nth-child(1){
+    background-color: #5DB9EE;
+    color: #262525;
+}
+
+button:nth-child(2){
+    background-color: transparent;
+    color:  #5DB9EE;
+    margin-left: 7px;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5DB9EE;
+}
+button:nth-child(2):hover{
+    background: #5DB9EE;
+    color: #262525;
+}
+.icons i.fab{
+    cursor: pointer;
+
+}
+.design img{
+ width:230px;
+ height: 230px;
+ border-radius: 140px;
+ margin-left:115px;
+ border: 8px solid rgb(230, 224, 224);
+ background-color: black;
+ background-repeat: no-repeat;
+ box-shadow: 
+   0 0 1rem  #5DB9EE;
+   
+
+}
+.design img:hover {
+    transform: translate(15px, 15px); /* Adjust the values based on how much you want it to move */
+  }
+
+  .line {
+    height: 5px;
+    background-color: #646262;
+
+}
+.sec2{
+    background-color: #262525;
+    height: 50vh;
+}
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Set the height of the body to the viewport height */
+    margin: 25px; /* Remove default body margin */
+    
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .first3 {
+    text-align: center;
+    font-size: 24px;
+    color: #5DB9EE;
+  }
+
+  .achi {
+    margin:30px;
+    gap: 2px;
+    background-color: #262525;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .achi a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .achi a:hover {
+    color: #5DB9EE;
+  }
+  .cer{
+    background-color: rgba(91, 95, 95, 0.816);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 20vh;
+    border: 2px solid black;
+
+  }
+  .contact-section {
+    background-color: #262525;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #5DB9EE;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #5DB9EE;
+    border-radius: 5px;
+    background-color: #262525;
+    color: white;
+}
+
+button {
+    background-color: #5DB9EE;
+    color: #262525;
+    padding: 10px 20px;
+    border: 2px solid #5DB9EE;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+button:hover {
+    background-color: #386FA0;
+}
+
+@media screen and (max-width: 300px) {
+    .navbar {
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .first {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .content {
+        text-align: center;
+    }
+}
+@media screen and (nax-width: 300px){
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:auto;
+        font-size: 12px;
+        gap: 3px;
+    }
+    .pic{
+        width:10vw;
+        margin-left: auto;
+
+        height: 10vh;
+    }
+    .achi{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
